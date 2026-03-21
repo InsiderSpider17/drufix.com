@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DruFix: micro-soldering and game system repair & upgrades. Fast local service (no public storefront)." />
+  <title>DruFix Game Repair</title>
+
+  <!-- Business logo as tab icon -->
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home">
+        <img src="logo.png" alt="DruFix Logo" class="brand-logo" loading="lazy" />
+        <span>DruFix</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="mobile-menu" aria-expanded="false" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" aria-label="Hero section">
+      <div class="hero-content">
+        <h1>DruFix Game Repair</h1>
+        <p>Micro-soldering • Console & handheld repair • Thermal paste, HDMI, charge port, custom mods.</p>
+        <a class="btn-primary" href="#contact">Request Quote</a>
+      </div>
+    </section>
+
+    <section id="about" class="spotlight">
+      <h2>About Me</h2>
+      <p>
+        I’m Dru, a home-based game system repair specialist in Midland, Texas. I focus on fast, trustworthy diagnostics and precise micro-soldering repairs for Nintendo, PlayStation, Xbox, and retro systems. I do not list a public address; everything is arranged by appointment and drop-off/pickup coordination.
+      </p>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Services</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Diagnostics</h3>
+          <p>Testing and thorough inspection of system and components done before estimates and repairs.</p>
+        </article>
+        <article class="card">
+          <h3>HDMI & Board-Level Repair</h3>
+          <p>HDMI port and board-level repairs.</p>
+        </article>
+        <article class="card">
+          <h3>Handheld Repairs</h3>
+          <p>Service for Nintendo Switch 1/2, Nintendo DS, GameBoy, and GameGear hardware repairs and board work.</p>
+        </article>
+        <article class="card">
+          <h3>Stick Drift Repair</h3>
+          <p>Controller analog stick recalibration + hall effect/TMR sensor replacement.</p>
+        </article>
+        <article class="card">
+          <h3>Thermal Paste / Cooling</h3>
+          <p>Reflow, thermal paste, clean fan and cooling system for overheating units.</p>
+        </article>
+        <article class="card">
+          <h3>Charge Port & Power</h3>
+          <p>USB-C / proprietary charging repair.</p>
+        </article>
+        <article class="card">
+          <h3>Micro-Soldering</h3>
+          <p>IC reball, board trace repair, component-level fix for consoles and handhelds.</p>
+        </article>
+        <article class="card">
+          <h3>Custom Mods & Upgrades</h3>
+          <p>NAND / SSD installs, LED mods, controller modding, Bluetooth/sound enhancements.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-block" aria-label="Lead capture prompt">
+      <h2>Get a Free Repair Estimate</h2>
+      <p>Fill out a quick request and I’ll reach out within 24 hours with diagnostic findings, repair cost, and expected turnaround. No address online, appointment-based service.</p>
+      <a class="btn-primary" href="#contact">Start Request</a>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <h2>Pricing</h2>
+      <ul>
+        <li>Standard Check-in + inspection: <strong>FREE</strong></li>
+        <li>Board-level and UART diagnostics: <strong>$40</strong></li>
+        <li>Common repairs (battery/port replacement/laser): <strong>$60–$200</strong></li>
+        <li>Complex board-level repair: <strong>$180–$300</strong></li>
+        <li>Premium test and clean service: <strong>$45–$140</strong></li>
+        <li>Same Day to 24 Hour Express repair fee: <strong>$100</strong></li>
+      </ul>
+      <p>All estimates are shared before repair work begins. Parts fees may apply.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>No address is listed online. Work is by appointment only; reach out by email or phone.</p>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Email:</strong> <a href="mailto:drufix.tx@gmail.com">drufix.tx@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+14322466324">(432) 246-6324</a></p>
+          <p><strong>Hours:</strong> Mon–Fri 9am–7pm, Sat–Sun 11am–7pm</p>
+          <div class="social-buttons">
+            <a class="btn-secondary" href="https://www.facebook.com/p/DruFix-61576111694480/" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a class="btn-secondary" href="https://www.instagram.com/drufix.tx/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+          <label>Full Name <input type="text" name="name" required /></label>
+          <label>Email <input type="email" name="email" required /></label>
+          <label>Device/Issue <input type="text" name="subject" required /></label>
+          <label>Message <textarea name="message" rows="4" required></textarea></label>
+          <button type="submit" class="btn-primary">Send Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> DruFix. All rights reserved. Appointment-based service only.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const nav = document.querySelector('.main-nav');
+    mobileMenu.addEventListener('click', () => {
+      const opened = mobileMenu.getAttribute('aria-expanded') === 'true';
+      mobileMenu.setAttribute('aria-expanded', String(!opened));
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
